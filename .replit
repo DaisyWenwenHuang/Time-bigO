@@ -1,2 +1,2 @@
 language = "python3"
-run = 'python lineartime.py'
+run = 'python bigofunction2.py'
