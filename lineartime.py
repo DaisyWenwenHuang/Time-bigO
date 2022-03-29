@@ -1,0 +1,23 @@
+import time
+
+fav_color = ['red']
+color = ['blue', 'green', 'grey', 'black', 'teal', 'red', 'pruple']
+large_array = ['red' for i in range(500000)]
+
+
+def whatis_fav_color(array):
+    red = 0
+    t0 = time.time()
+    for i in range(len(array)):
+        if array[i] == 'red':
+            red += 1
+            # print('your favorate color is red')
+    t1 = time.time()
+
+    print(
+        f'It took you {t1-t0} seconds to decide which color is your favorate!')
+
+
+whatis_fav_color(fav_color)
+whatis_fav_color(color)
+whatis_fav_color(large_array)
