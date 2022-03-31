@@ -73,13 +73,11 @@ def regex(string):
 	D={}
 	for word in words:
 		D[word]=len(word)
-	# print(D)
-	l_word=max(D,key=D.get)
-	# print(longest_word)	
-	return print(l_word)
+		
+	theword=max(D,key=D.get)
+	return theword
 
-
-regex(string)
+print(regex(string))
 
 		
 		
