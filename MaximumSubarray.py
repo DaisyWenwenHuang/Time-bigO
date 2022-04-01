@@ -42,7 +42,7 @@ def pre_fix_sol(array):
 	for num in array:
 		if c_sum < 0:
 			c_sum = 0
-		c_sum += num	
+		c_sum += num	# This code needs to be behind the reset of the c_sum
 		maximum = max(maximum,c_sum)
 	return maximum
 
