@@ -35,6 +35,7 @@ print(brute_force_sol(array1))
 # get ride of the prefix as joining 'negative subarray' is smaller than the number itself
 # iterate the all the number in the array, get ride of negative prefixes.
 # 'sliding window'
+# Time complexity is O(n)
 
 def pre_fix_sol(array):
 	maximum = array[0] # Can not be 0 as number can be negative
