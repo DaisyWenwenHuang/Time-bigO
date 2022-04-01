@@ -28,7 +28,7 @@ def brute_force_sol(array):
 	return maximum
 
 
-print(brute_force_sol(array1))
+# print(brute_force_sol(array1))
 
 # Can we improve it?
 # if the prefix  (sum before the number) is negative
@@ -48,4 +48,24 @@ def pre_fix_sol(array):
 	return maximum
 
 
-print(pre_fix_sol(array1))
+print(pre_fix_sol(array))
+
+
+# Kadena's Algorithm approach
+
+
+def kadena_sol(array):
+	maximum = array[0]
+	currsum = 0
+	for num in array:
+		currsum += num
+		maximum = max(maximum, currsum)
+		if currsum < 0:
+			currsum = 0
+	return maximum 
+
+
+print(kadena_sol(array1))
+
+
+
