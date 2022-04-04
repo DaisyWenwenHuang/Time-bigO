@@ -61,7 +61,7 @@ def longest_word(string):
 	
 # can we use re library?
 # would be more efficient 
-# thinking :
+# thinking : using re 
 # first : split the string into groups of words
 # then : find the max length word
 
