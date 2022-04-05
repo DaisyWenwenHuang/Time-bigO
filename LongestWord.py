@@ -63,7 +63,7 @@ def longest_word(string):
 # would be more efficient 
 # thinking : using re 
 # first : split the string into groups of words
-# then : find the max length word
+# then : find the word with max length
 
 import re
 
