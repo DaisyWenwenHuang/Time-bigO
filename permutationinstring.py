@@ -31,3 +31,6 @@ class Solution:
         return False
 
 # better solution
+# can iterate the two lists, s1 and s2,
+# make two count hashmaps to compair how many matehces are there
+# 
