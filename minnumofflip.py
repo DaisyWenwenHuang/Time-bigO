@@ -7,9 +7,9 @@ def minflip(s):
 	res = len(s)
 
 	alt1 = ''.join(['1' if i % 2 else '0' for i in range(len(s))])
-	# print(alt1)
+
 	alt2 = ''.join(['0' if i % 2 else '1' for i in range(len(s))])
-	# print(alt2)
+
 	diff1,diff2 = 0,0
 	l = 0
 
