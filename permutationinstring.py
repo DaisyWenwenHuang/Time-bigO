@@ -52,15 +52,18 @@ class Solution:
             countW[ord(s2[i]) - ord('a')] += 1
         
         match = 0
+		# T(26)
         for i in range(26):
             if countS[i] == countW[i]:
                 match += 1
         
         l = 0
+		# T(n)
         for r in range(m, len(s2)):
             if match == 26:
                 return True
-            
+
+			# sliding fixed length window 
             index = ord(s2[r]) - ord('a')
             countW[index] += 1
             if countW[index] == countS[index]:
