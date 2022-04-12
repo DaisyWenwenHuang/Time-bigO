@@ -36,36 +36,3 @@ class Solution:
             return ''
 
 
-# 
-        if len(t) > len(s):
-            return ''
-        
-        countT={}
-        countW={}
-        res=[-1,-1]
-        res_len = float(inf)
-
-        for i in range(len(t)):
-            countT[t[i]] = 1 + countT.get(t[i] , 0)
-        need = len(countT)
-        
-        l = 0
-        have = 0
-        for r in range(len(s)):
-            countW[s[r]] = 1 + countW.get(s[r], 0)
-            if s[r] in countT and countW[s[r]] == countT[s[r]]:
-                have += 1
-            while have == need:
-                if r - l + 1 < res_len:
-                    res = [l, r]
-                    res_len = r - l + 1
-                countW[s[l]] -= 1
-                if s[l] in countT and countW[s[l]] < countT[s[l]]:
-                    have -= 1
-                l += 1
-        l,r = res
-        if res_len != float(inf):
-            return s[l:r+1]
-        else:
-            return ''
-     
