@@ -1,3 +1,4 @@
+# import libary
 import time
 
 fav_color = ['red']
